@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Matoa/static/css/main.7acaea2f.css",
-    "main.js": "/Matoa/static/js/main.397c4b67.js",
+    "main.js": "/Matoa/static/js/main.8765a31f.js",
     "index.html": "/Matoa/index.html",
     "main.7acaea2f.css.map": "/Matoa/static/css/main.7acaea2f.css.map",
-    "main.397c4b67.js.map": "/Matoa/static/js/main.397c4b67.js.map"
+    "main.8765a31f.js.map": "/Matoa/static/js/main.8765a31f.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.397c4b67.js"
+    "static/js/main.8765a31f.js"
   ]
 }
