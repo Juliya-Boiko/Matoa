@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Matoa/static/css/main.7acaea2f.css",
-    "main.js": "/Matoa/static/js/main.8765a31f.js",
+    "main.js": "/Matoa/static/js/main.b2bac9b5.js",
+    "static/media/logo.svg": "/Matoa/static/media/logo.1eba533833596989f2674f1a0a2a718a.svg",
+    "static/media/basket.svg": "/Matoa/static/media/basket.88edf9abdd4e2b9fa1988c77ff0b93aa.svg",
     "index.html": "/Matoa/index.html",
-    "main.7acaea2f.css.map": "/Matoa/static/css/main.7acaea2f.css.map",
-    "main.8765a31f.js.map": "/Matoa/static/js/main.8765a31f.js.map"
+    "static/media/search.svg": "/Matoa/static/media/search.4787b00e3266d5015ace15567ba5bb14.svg",
+    "main.b2bac9b5.js.map": "/Matoa/static/js/main.b2bac9b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.8765a31f.js"
+    "static/js/main.b2bac9b5.js"
   ]
 }
