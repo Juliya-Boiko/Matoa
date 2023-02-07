@@ -18,4 +18,8 @@ export const theme = {
     primaryLight: '#777777',
     primaryAddictional: '#555555',
   },
+  breakPoints: {
+    tablet: '768px',
+    desktop: '1110px',
+  }
 };
