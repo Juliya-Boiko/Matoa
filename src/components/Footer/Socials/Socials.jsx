@@ -6,16 +6,16 @@ export const Socials = () => {
   return (
     <SocialsList>
       <SocialItem>
-        <SocialLink href=""><TiSocialFacebook size={30}/></SocialLink>
+        <SocialLink href="https://www.facebook.com/"><TiSocialFacebook size={30}/></SocialLink>
       </SocialItem>
       <SocialItem>
-        <SocialLink href=""><AiOutlineInstagram size={30}/></SocialLink>
+        <SocialLink href="https://www.instagram.com/accounts/login/"><AiOutlineInstagram size={30}/></SocialLink>
       </SocialItem>
       <SocialItem>
-        <SocialLink href=""><AiOutlineTwitter size={30} /></SocialLink>
+        <SocialLink href="https://twitter.com/"><AiOutlineTwitter size={30} /></SocialLink>
       </SocialItem>
       <SocialItem>
-        <SocialLink href=""><AiFillYoutube size={30} /></SocialLink>
+        <SocialLink href="https://www.youtube.com/"><AiFillYoutube size={30} /></SocialLink>
       </SocialItem>
     </SocialsList>
   );

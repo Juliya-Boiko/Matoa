@@ -8,7 +8,7 @@ export const LayoutContainer = styled.div`
 `;
 
 export const PageContainer = styled.main`
-  padding: 30px 0;
+  padding: 30px 0 0 0;
   // background-color: blue;
   flex-grow: 1;
 `;
