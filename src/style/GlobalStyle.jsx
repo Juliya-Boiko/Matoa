@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #333333;
-    box-sizing: border-box;
     background-color: #F7F6F4;
   }
   ul {

@@ -1,10 +1,12 @@
-import { Container } from "components/common/Container.styled"; 
 import { Hero } from "components/Hero/Hero";
+import { Container, PageContainer } from "components/common/containers.styled";
 
 export const Home = () => {
   return (
-    <Container>
-      <Hero />
-    </Container>
+    <PageContainer>
+      <Container>
+        <Hero />
+      </Container>
+    </PageContainer>
   );
 };

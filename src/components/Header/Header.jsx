@@ -5,6 +5,7 @@ import { CgMenuGridO } from "react-icons/cg";
 import { Logo } from 'components/Logo/Logo';
 import { useState } from "react";
 import { Menu } from 'components/Menu/Menu';
+import { Container } from 'components/common/containers.styled';
 import { HeaderContainer, HeaderActions, OpenMenuBtn, OpenBasketBtn, SearchForm, SearchInput, SearchBtn } from './Header.styled';
 import { theme } from '../../style/theme';
 import { Basket } from 'components/Basket/Basket';
@@ -22,7 +23,8 @@ export const Header = () => {
   };
 
   return (
-    <HeaderContainer>
+    <Container>
+      <HeaderContainer>
       <HeaderActions>
         <OpenMenuBtn type="button" onClick={modalHandler}>
           <CgMenuGridO color={theme.colors.primaryAddictional} size={40} />
@@ -52,5 +54,7 @@ export const Header = () => {
       {isMenuOpen ? <Menu /> : null}
       {isBasketOpen? <Basket /> : null}
     </HeaderContainer>
+    </Container>
+    
   );
 };

@@ -1,10 +1,28 @@
 import styled from "styled-components";
 
+export const LayoutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+`;
+
+export const PageContainer = styled.main`
+  padding: 30px 0;
+  // background-color: blue;
+  flex-grow: 1;
+`;
+
 export const Container = styled.div`
-  width: 100%;
+  padding: 0 15px;
+
+
+
+
+  /* width: 100%;
 
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px; */
 
   /* @media screen and (min-width: 480px) {
     width: 480px;
@@ -18,3 +36,4 @@ export const Container = styled.div`
     width: 1200px;
   } */
 `;
+
