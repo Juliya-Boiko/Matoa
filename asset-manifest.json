@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Matoa/static/js/main.8fe1fd0b.js",
+    "main.js": "/Matoa/static/js/main.c7bf661a.js",
     "static/media/logo-footer.svg": "/Matoa/static/media/logo-footer.af821e1ec1d98b62ac9fa70058139139.svg",
     "static/media/logo.svg": "/Matoa/static/media/logo.1eba533833596989f2674f1a0a2a718a.svg",
     "static/media/client-3.svg": "/Matoa/static/media/client-3.499b3cb0074cf76f72077bb623dd8f00.svg",
@@ -17,9 +17,9 @@
     "static/media/user.svg": "/Matoa/static/media/user.4505b0c594d2264217add94c57b2f88f.svg",
     "index.html": "/Matoa/index.html",
     "static/media/search.svg": "/Matoa/static/media/search.4787b00e3266d5015ace15567ba5bb14.svg",
-    "main.8fe1fd0b.js.map": "/Matoa/static/js/main.8fe1fd0b.js.map"
+    "main.c7bf661a.js.map": "/Matoa/static/js/main.c7bf661a.js.map"
   },
   "entrypoints": [
-    "static/js/main.8fe1fd0b.js"
+    "static/js/main.c7bf661a.js"
   ]
 }
