@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const SocialsList = styled.ul`
   display: flex;
   justify-content: space-between;
+  @media screen and (min-width: ${p => p.theme.breakPoints.tablet}) {
+    max-width: 500px;
+  }
 `;
 
 export const SocialItem = styled.li`

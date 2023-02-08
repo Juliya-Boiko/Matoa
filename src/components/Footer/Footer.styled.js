@@ -10,6 +10,9 @@ export const FooterContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (min-width: ${p => p.theme.breakPoints.desktop}) {
+    flex-direction: row;
+  }
 `;
 
 export const FooterTitle = styled.p`

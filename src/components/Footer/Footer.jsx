@@ -1,6 +1,6 @@
 import { Container } from "components/common/containers.styled";
 import { FooterContainer, FooterContent } from "./Footer.styled";
-import { Scroll } from "components/Scroll/Scroll";
+import { Scroll } from "components/Footer/Scroll/Scroll";
 import { Socials } from "./Socials/Socials";
 import { Contacts } from "./Contacts/Contacts";
 import { Address } from "./Address/Address";
