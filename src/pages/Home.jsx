@@ -4,6 +4,7 @@ import { Partners } from "components/Partners/Partners";
 import { fetchAllProducts } from "api/axios";
 import { useEffect, useState } from "react";
 import { Deals } from "components/Deals/Deals";
+import { discountFilter } from "helpers/discountFilter";
 
 export const Home = () => {
   const [products, setProducts] = useState([]);
@@ -20,9 +21,8 @@ export const Home = () => {
   return (
     <PageContainer>
       <Container>
-        {/* <Hero data={products[0]} /> */}
-        {products && <Hero data={products} />}
-        <Deals />
+        {products ? <Hero data={products} /> : null}
+        {products ? <Deals data={discountFilter(products)} /> : null}
       </Container>
       <Partners />
     </PageContainer>
