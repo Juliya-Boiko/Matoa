@@ -8,16 +8,20 @@ import { HeaderFull } from './HeaderFull/HeaderFull';
 export const Header = () => {
   const [isBasketOpen, setIsBasketOpen] = useState(false);
 
-  const basketHandler = () => {
-    setIsBasketOpen(prevState => !prevState);
+  const openBasket = () => {
+    setIsBasketOpen(true);
+  };
+
+  const closeBasket = () => {
+    setIsBasketOpen(false);
   };
 
   return (
     <Container>
       <HeaderContainer>
-        <HeaderCompact basketHandler={basketHandler} />
-        <HeaderFull basketHandler={basketHandler}/>
-        {isBasketOpen? <Basket /> : null}
+        <HeaderCompact basketHandler={openBasket} />
+        <HeaderFull basketHandler={openBasket}/>
+        {isBasketOpen? <Basket closeBasket={closeBasket} /> : null}
       </HeaderContainer>
     </Container>
   );

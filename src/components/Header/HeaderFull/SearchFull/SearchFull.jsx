@@ -1,10 +1,11 @@
 import { SearchBtn } from "components/buttons/SearchBtn";
+import { FullForm, FullInput } from './SearchFull.styled';
 
 export const SearchFull = () => { 
   return (
-    <form>
-      <input type="text" />
-      <SearchBtn width={20} height={20} />
-    </form>
+    <FullForm>
+      <FullInput type="text" placeholder="search..." />
+      <SearchBtn width="20" height="20" />
+    </FullForm>
   );
 };
