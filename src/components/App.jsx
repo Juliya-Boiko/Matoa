@@ -2,15 +2,19 @@ import { Route, Routes } from "react-router-dom";
 import { SharedLayout } from "layouts/SharedLayout";
 import { Home } from "pages/Home";
 import { News } from "pages/News";
+import { Details } from "pages/Details";
+import { lazy, Suspense } from "react";
 
 export const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<SharedLayout />}>
-        <Route index element={<Home />} />
-        <Route path="news" element={<News />} />
-        {/* <Route path="products/:id" element={<ProductDetails />} /> */}
-      </Route>
-    </Routes>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path="news" element={<News />} />
+          <Route path="products/:id" element={<Details />} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
 };
