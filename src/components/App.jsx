@@ -3,7 +3,7 @@ import { SharedLayout } from "layouts/SharedLayout";
 import { Home } from "pages/Home";
 import { News } from "pages/News";
 import { Details } from "pages/Details";
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 
 export const App = () => {
   return (
