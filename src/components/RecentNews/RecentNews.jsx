@@ -4,7 +4,7 @@ import NewsDefaultImg from '../../images/news/news-defailt.png';
 import { NewsContainer, NewsCard, NewsCardDate, NewsCardTitle, NewsCardLink, NewsCardImage } from "./RecentNews.styled";
 
 export const RecentNews = ({ data }) => {
-  console.log(data);
+ // console.log(data);
 
   return (
     <NewsContainer>

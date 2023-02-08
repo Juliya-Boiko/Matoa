@@ -10,4 +10,8 @@ export const fetchAllProducts = async () => {
 
 export const fetchAllNews = async () => {
   return await axios.get('/news').then(response => response.data.data);
+};
+
+export const fetchAllReviews = async () => {
+  return await axios.get('/reviews').then(response => response.data.data);
 }
