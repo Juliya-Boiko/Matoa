@@ -1,4 +1,4 @@
-import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 export const Details = () => {
   const { id } = useParams();
