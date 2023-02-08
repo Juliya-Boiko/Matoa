@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.js": "/Matoa/static/js/main.55c692c0.js",
+    "main.js": "/Matoa/static/js/main.cfd58363.js",
     "static/media/default.png": "/Matoa/static/media/default.6e92a650d51f8f622634.png",
+    "static/media/default-deals.png": "/Matoa/static/media/default-deals.66c3443f31f09afb7e26.png",
     "static/media/logo-footer.svg": "/Matoa/static/media/logo-footer.af821e1ec1d98b62ac9fa70058139139.svg",
     "static/media/logo.svg": "/Matoa/static/media/logo.1eba533833596989f2674f1a0a2a718a.svg",
     "static/media/client-3.svg": "/Matoa/static/media/client-3.499b3cb0074cf76f72077bb623dd8f00.svg",
@@ -21,9 +22,9 @@
     "static/media/search.svg": "/Matoa/static/media/search.4787b00e3266d5015ace15567ba5bb14.svg",
     "static/media/prev.svg": "/Matoa/static/media/prev.b29bf5d197500b82894bff751c519a32.svg",
     "static/media/next.svg": "/Matoa/static/media/next.b1a55efff875ad1fa1c81b327dbd3372.svg",
-    "main.55c692c0.js.map": "/Matoa/static/js/main.55c692c0.js.map"
+    "main.cfd58363.js.map": "/Matoa/static/js/main.cfd58363.js.map"
   },
   "entrypoints": [
-    "static/js/main.55c692c0.js"
+    "static/js/main.cfd58363.js"
   ]
 }
