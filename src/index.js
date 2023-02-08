@@ -5,14 +5,21 @@ import { GlobalStyle } from 'style/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import { App } from 'components/App';
 import { theme } from 'style/theme';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { store, persistor } from 'redux/store';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
-      <BrowserRouter basename="/matoa">
-        <App />
-      </BrowserRouter>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <BrowserRouter basename="/matoa">
+            <App />
+          </BrowserRouter>
+        </PersistGate>
+      </Provider>
     </ThemeProvider>
   </React.StrictMode>
 );

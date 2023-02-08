@@ -4,8 +4,11 @@ import { HeaderContainer } from './Header.styled';
 import { Basket } from 'components/Basket/Basket';
 import { HeaderCompact } from './HeaderCompact/HeaderCompact';
 import { HeaderFull } from './HeaderFull/HeaderFull';
+import { useSelector } from "react-redux";
 
 export const Header = () => {
+  const data = useSelector(state => state);
+  console.log(data);
   const [isBasketOpen, setIsBasketOpen] = useState(false);
 
   const openBasket = () => {
