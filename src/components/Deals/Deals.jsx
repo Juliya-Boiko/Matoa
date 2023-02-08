@@ -3,7 +3,8 @@ import { SectionTitle } from "components/common/titles.styled";
 import { DealCard } from "./DealCard/DealCard";
 
 export const Deals = ({ data }) => {
-  console.log(data);
+  //console.log(data);
+  
   return (
     <DealsContainer>
       <SectionTitle>Monthly Deals</SectionTitle>
