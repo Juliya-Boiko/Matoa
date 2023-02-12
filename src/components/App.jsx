@@ -3,6 +3,7 @@ import { SharedLayout } from "layouts/SharedLayout";
 import { Home } from "pages/Home";
 import { News } from "pages/News";
 import { Details } from "pages/Details";
+import { Auth } from "pages/Auth";
 import { Suspense } from "react";
 
 export const App = () => {
@@ -13,6 +14,7 @@ export const App = () => {
           <Route index element={<Home />} />
           <Route path="news" element={<News />} />
           <Route path="products/:id" element={<Details />} />
+          <Route path="auth" element={<Auth />} />
         </Route>
       </Routes>
     </Suspense>

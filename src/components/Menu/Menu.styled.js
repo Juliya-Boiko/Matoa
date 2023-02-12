@@ -10,7 +10,7 @@ export const MenuContainer = styled.div`
 `;
 
 export const MenuNav = styled.nav`
-  margin: 0 0 50px 0;
+  //margin: 0 0 50px 0;
 `;
 
 export const MenuItem = styled.li`

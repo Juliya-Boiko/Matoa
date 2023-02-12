@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MenuAuthForm, MenuAuthInput } from "./AuthForm.styled";
+import { AuthFormContainer, MenuAuthForm, MenuAuthInput } from "./AuthForm.styled";
 import { AuthFormSubmitBtn } from "components/buttons/AuthFormSubmitBtn";
 import { AuthFormToggleBtn } from "components/buttons/AuthFormToggleBtn";
 
@@ -11,7 +11,7 @@ export const AuthForm = () => {
   }; 
 
   return (
-    <div>
+    <AuthFormContainer>
       {isRegister
       ? <MenuAuthForm>
           <MenuAuthInput type="text" placeholder="email" />
@@ -26,6 +26,6 @@ export const AuthForm = () => {
         </MenuAuthForm>
       }
       <AuthFormToggleBtn toggleForm={toggleForm} isRegister={isRegister} />
-    </div>
+    </AuthFormContainer>
   );
 };

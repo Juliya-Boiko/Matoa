@@ -1,17 +1,9 @@
 import { Backdrop } from "components/common/backdrop.styled";
-import { useState, useEffect } from "react";
-import { AuthForm } from "components/AuthForm/AuthForm";
+import { useEffect } from "react";
 import { MenuContainer, MenuNav, MenuItem, MenuLink } from "./Menu.styled";
-import { AuthFormOpenBtn } from "components/buttons/AuthFormOpenBtn";
 
 export const Menu = ({ closeMenu }) => {
-  const [isAuthShow, setIsAuthShow] = useState(false);
-
-  const authHandler = () => {
-    setIsAuthShow(prevState => !prevState);
-  };
-
-    useEffect(() => {
+  useEffect(() => {
     const handleKeyDown = e => {
       if (e.code === 'Escape') {
         closeMenu();
@@ -40,12 +32,13 @@ export const Menu = ({ closeMenu }) => {
               <MenuLink to="/" end>Home</MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/news">News</MenuLink>
+              <MenuLink to="news">News</MenuLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuLink to="auth">Log In / Register</MenuLink>
             </MenuItem>
           </ul>
         </MenuNav>
-        <AuthFormOpenBtn authHandler={authHandler} />
-        {isAuthShow ? <AuthForm /> : null}
       </MenuContainer>
     </Backdrop>
   );
