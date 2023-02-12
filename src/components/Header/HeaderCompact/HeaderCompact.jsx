@@ -9,19 +9,23 @@ import { CompactContainer, CompactMain } from "./HeaderCompact.styled";
 export const HeaderCompact = ({ basketHandler }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
-  const menuHandler = () => {
-    setIsMenuOpen(prevState => !prevState);
+  const openMenu = () => {
+    setIsMenuOpen(true);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
   
   return (
     <CompactContainer>
       <CompactMain>
-        <MenuBtn menuHandler={menuHandler} />
+        <MenuBtn openMenu={openMenu} />
         <Logo width={120} height={15} />
         <BasketBtn basketHandler={basketHandler} width="30" height="30" />
       </CompactMain>
       <SearchCompact />
-      {isMenuOpen ? <Menu /> : null}
+      {isMenuOpen ? <Menu closeMenu={closeMenu} /> : null}
     </CompactContainer>
   );
 };

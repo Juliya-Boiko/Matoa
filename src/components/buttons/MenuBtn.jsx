@@ -17,9 +17,9 @@ const Button = styled.button`
   } */
 `;
 
-export const MenuBtn = ({ menuHandler }) => { 
+export const MenuBtn = ({ openMenu }) => { 
   return (
-    <Button type="button" onClick={menuHandler}>
+    <Button type="button" onClick={openMenu}>
       <CgMenuGridO color={theme.colors.primaryAddictional} size={40} />
     </Button>
   );

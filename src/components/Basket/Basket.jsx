@@ -3,7 +3,7 @@ import { BasketContainer } from "./Basket.styled";
 import { useEffect } from "react";
 
 export const Basket = ({ closeBasket }) => {
-    useEffect(() => {
+  useEffect(() => {
     const handleKeyDown = e => {
       if (e.code === 'Escape') {
         closeBasket();

@@ -2,8 +2,21 @@ import styled from "styled-components";
 
 export const ReviewArticle = styled.div`
   display: flex;
-  //flex-direction: column;
-  align-items: center;
+  align-items:center;
+  margin: 0 0 15px 0;
+`;
+
+export const ReviewCardPhoto = styled.img`
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+  @media screen and (min-width: ${p => p.theme.breakPoints.tablet}) {
+    border-radius: 0;
+    width: 300px;
+    height: auto;
+    margin: 0 80px 0 0;
+  }
 `;
 
 export const ReviewCardText = styled.p`
@@ -11,6 +24,9 @@ export const ReviewCardText = styled.p`
   font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  @media screen and (min-width: ${p => p.theme.breakPoints.tablet}) {
+    font-size: 16px;
+  }
 `;
 
 export const ReviewCardName = styled.p`
@@ -18,6 +34,9 @@ export const ReviewCardName = styled.p`
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  @media screen and (min-width: ${p => p.theme.breakPoints.tablet}) {
+    font-size: 24px;
+  }
 `;
 
 export const ReviewCardDate = styled.p`
@@ -26,4 +45,7 @@ export const ReviewCardDate = styled.p`
   line-height: 2;
   letter-spacing: 0.03em;
   color: ${p => p.theme.colors.primaryLight};
+  @media screen and (min-width: ${p => p.theme.breakPoints.tablet}) {
+    font-size: 16px;
+  }
 `;
