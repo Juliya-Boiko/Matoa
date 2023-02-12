@@ -18,6 +18,7 @@ export const theme = {
     primary: '#333333',
     primaryLight: '#777777',
     primaryAddictional: '#555555',
+    primaryAddictionalLight: '#999999',
   },
   breakPoints: {
     tablet: '768px',

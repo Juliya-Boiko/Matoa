@@ -7,9 +7,8 @@ export const Backdrop = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
-  //flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 100;
 `;

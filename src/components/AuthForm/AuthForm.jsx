@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { MenuAuthForm, MenuAuthInput } from "./AuthForm.styled";
+import { AuthFormSubmitBtn } from "components/buttons/AuthFormSubmitBtn";
+import { AuthFormToggleBtn } from "components/buttons/AuthFormToggleBtn";
 
 export const AuthForm = () => {
   const [isRegister, setIsRegister] = useState(true);
@@ -10,22 +13,19 @@ export const AuthForm = () => {
   return (
     <div>
       {isRegister
-      ? <form>
-          <input type="text" placeholder="email" />
-          <input type="text" placeholder="password" />
-          <button type="submit">Log In</button>
-          
-        </form >
-      : <form>
-          <input type="text" placeholder="email" />
-          <input type="text" placeholder="password" />
-          <input type="text" placeholder="name" />
-          <button type="submit">Register</button>
-        </form>
+      ? <MenuAuthForm>
+          <MenuAuthInput type="text" placeholder="email" />
+          <MenuAuthInput type="text" placeholder="password" />
+          <AuthFormSubmitBtn title='Log In' />
+        </MenuAuthForm >
+      : <MenuAuthForm>
+          <MenuAuthInput type="text" placeholder="email" />
+          <MenuAuthInput type="text" placeholder="password" />
+          <MenuAuthInput type="text" placeholder="name" />
+          <AuthFormSubmitBtn title='Register' />
+        </MenuAuthForm>
       }
-      <button onClick={toggleForm}>
-        {isRegister ? "Dont have account" : "Already have accoun"}
-      </button>
+      <AuthFormToggleBtn toggleForm={toggleForm} isRegister={isRegister} />
     </div>
   );
 };
