@@ -1,13 +1,13 @@
 import { Backdrop } from "components/common/backdrop.styled";
 import { BasketContainer } from "./Basket.styled";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Loader } from "components/Loader/Loader";
-import { fetchAllProducts } from "api/axios";
-import { useSelector } from "react-redux";
+//import { fetchAllProducts } from "api/axios";
+//import { useSelector } from "react-redux";
 
 export const Basket = ({ closeBasket }) => {
-  const basket = useSelector(state => state.order.items);
-  const [items, setItems] = useState([]);
+  // const basket = useSelector(state => state.order.items);
+  // const [items, setItems] = useState([]);
   //console.log('basket--->', basket);
 
   useEffect(() => {
