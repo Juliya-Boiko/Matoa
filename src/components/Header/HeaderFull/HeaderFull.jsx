@@ -6,6 +6,7 @@ import { BasketBtn } from "components/buttons/BasketBtn";
 import UserIcon from '../../../images/icons/user.svg';
 
 export const HeaderFull = ({ basketHandler }) => { 
+
   return (
     <FullContainer>
       <Logo width={178} height={22} />

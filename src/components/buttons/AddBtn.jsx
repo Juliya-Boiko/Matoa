@@ -30,9 +30,9 @@ const Button = styled.button`
   }
 `;
 
-export const AddBtn = ({ addHandler, width, height }) => {
+export const AddBtn = ({ action, width, height }) => {
   return (
-    <Button type="button" onClick={addHandler}>
+    <Button type="button" onClick={action}>
       <img src={AddIcon} width={width} height={height} alt="Add icon" />
       <span>Add to order</span>
     </Button>

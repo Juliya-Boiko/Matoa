@@ -88,7 +88,9 @@ export const orderSlice = createSlice({
 //   },
   reducers: {
     addItem: (state, action) => {
-      return { ...state, filter: action.payload };
+      //console.log('state--->', state);
+      console.log('action--->', action);
+      return { items: [action.payload, ...state.items] };
     },
   }
 });

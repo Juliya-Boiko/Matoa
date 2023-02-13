@@ -7,6 +7,7 @@ import { RecentNews } from "components/RecentNews/RecentNews";
 import { Reviews } from "components/Reviews/Reviews";
 import { Partners } from "components/Partners/Partners";
 import { Container, PageContainer } from "components/common/containers.styled";
+import { Loader } from "components/Loader/Loader";
 
 export const Home = () => {
   const [products, setProducts] = useState([]);
@@ -38,10 +39,10 @@ export const Home = () => {
   return (
     <PageContainer>
       <Container>
-        {products ? <Hero data={products} /> : null}
-        {products ? <Deals data={discountFilter(products)} /> : null}
-        {recentNews ? <RecentNews data={recentNews} /> : null}
-        {reviews ? <Reviews data={reviews} /> : null}
+        {products ? <Hero data={products} /> : <Loader />}
+        {products ? <Deals data={discountFilter(products)} /> : <Loader />}
+        {recentNews ? <RecentNews data={recentNews} /> : <Loader />}
+        {reviews ? <Reviews data={reviews} /> : <Loader />}
       </Container>
       <Partners />
     </PageContainer>

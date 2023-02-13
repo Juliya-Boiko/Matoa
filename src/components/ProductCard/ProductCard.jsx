@@ -9,7 +9,7 @@ import { ProductCardContent,
 
 export const ProductCard = ({ product }) => {
   const [amount, setAmount] = useState(1);
-  console.log(product);
+ // console.log(product);
 
   const incrHandler = () => {
     setAmount(prevState => prevState + 1);
